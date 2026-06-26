@@ -3,158 +3,29 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="Personal profile for anuragupta06" />
-    <title>anuragupta06 · Computer Science Profile</title>
+    <meta name="description" content="anuragupta06" />
+    <title>anuragupta06</title>
     <link rel="stylesheet" href="assets/styles.css" />
   </head>
   <body>
-    <a class="skip-link" href="#about">Skip to content</a>
-    <header class="masthead">
-      <div class="masthead__inner-wrap">
-        <a class="masthead__brand" href="#">anuragupta06</a>
-        <button class="menu-toggle" type="button" id="menuToggle" aria-label="Open navigation">Menu</button>
-        <nav class="site-nav" id="siteNav" aria-label="Site">
-          <a href="#about">About</a>
-          <a href="#publications">Publication</a>
-          <a href="#projects">Projects</a>
-          <a href="#skills">Skills</a>
-          <a href="#timeline">Background</a>
-          <a href="#cv">CV / PDF</a>
-          <a href="#contact">Contact</a>
-        </nav>
-      </div>
-    </header>
-
-    <main id="main" class="content-shell">
-      <aside class="sidebar sticky" aria-label="Profile">
-        <section class="profile">
-          <div class="avatar" aria-hidden="true">A</div>
-          <h1 class="author__name">anuragupta06</h1>
-          <p class="author__bio">Computer Science · University of Glasgow</p>
-          <p class="author__note">Master's student · Actively job hunting</p>
-
-          <ul class="contact-list">
-            <li>University: <span>University of Glasgow (MSc)</span></li>
-            <li>Location: <span>Glasgow, UK</span></li>
-            <li><a href="mailto:youremail@example.com">youremail@example.com</a></li>
+    <main class="container">
+      <section class="topbar">
+        <div class="avatar" aria-hidden="true">A</div>
+        <div class="identity">
+          <h1>anuragupta06</h1>
+          <ul class="links" aria-label="Links">
             <li><a href="https://github.com/anuragupta06" target="_blank" rel="noopener noreferrer">GitHub</a></li>
-            <li><a href="#cv">Download CV (PDF placeholder)</a></li>
           </ul>
-        </section>
-      </aside>
+        </div>
+      </section>
 
-      <div class="page">
-        <section id="about" class="block">
-          <h1>About</h1>
-          <p>
-            Master's student in Computer Science at the University of Glasgow, currently open to full-time opportunities and internships.
-          </p>
-        </section>
+      <nav class="section-nav" aria-label="Sections">
+        <a href="#publications">Publications</a>
+      </nav>
 
-        <section id="publications" class="block">
-          <h1>Publications</h1>
-          <p>
-            Publication list will be added here. Placeholder preserved for now.
-          </p>
-        </section>
-
-        <section id="projects" class="block">
-          <h1>Projects</h1>
-          <article class="paper-box">
-            <div class="paper-box-text">
-              <h2>Sample Project · Perception Benchmark</h2>
-              <p>Realtime model pipeline for robust data preprocessing and evaluation on edge devices.</p>
-              <div class="tags">
-                <span>Python</span>
-                <span>PyTorch</span>
-                <span>Docker</span>
-              </div>
-            </div>
-          </article>
-          <article class="paper-box">
-            <div class="paper-box-text">
-              <h2>Sample Project · Parallel Simulation</h2>
-              <p>Distributed simulation environment with reproducible benchmarks and dashboard tracking.</p>
-              <div class="tags">
-                <span>C++</span>
-                <span>CUDA</span>
-                <span>Ray</span>
-              </div>
-            </div>
-          </article>
-          <article class="paper-box">
-            <div class="paper-box-text">
-              <h2>Sample Project · Systems Utility Toolkit</h2>
-              <p>Utilities for dataset checks, model logging, and automated experiment packaging.</p>
-              <div class="tags">
-                <span>TypeScript</span>
-                <span>Node.js</span>
-                <span>GitHub Actions</span>
-              </div>
-            </div>
-          </article>
-        </section>
-
-        <section id="skills" class="block">
-          <h1>Skills</h1>
-          <ul class="skill-list">
-            <li>Machine Learning: CV / NLP / model evaluation</li>
-            <li>Systems: Linux, Docker, distributed training, profiling</li>
-            <li>Languages: Python, C++, JavaScript, SQL</li>
-          </ul>
-        </section>
-
-        <section id="timeline" class="block">
-          <h1>Background</h1>
-          <ol class="timeline">
-            <li>
-              <strong>2026 (Current)</strong>
-              <p>Virtual profile draft for CS-focused portfolio and research presentation.</p>
-            </li>
-            <li>
-              <strong>2025</strong>
-              <p>Deepening work in ML system design and deployment.</p>
-            </li>
-            <li>
-              <strong>2024</strong>
-              <p>Experiment tracking and reproducibility pipeline built around GitHub workflows.</p>
-            </li>
-          </ol>
-        </section>
-
-        <section id="cv" class="block">
-          <h1>CV / PDF</h1>
-          <p>PDF is currently a placeholder. Replace <code>assets/cv-placeholder.pdf</code> with your real CV.</p>
-          <div class="pdf-card">
-            <iframe
-              src="assets/cv-placeholder.pdf"
-              title="CV Preview"
-              loading="lazy"
-            ></iframe>
-            <p class="hint">
-              当前展示的是占位 PDF。你给我正式 PDF 后，我会直接替换为真正文件并自动显示在此处。
-            </p>
-          </div>
-          <a class="download-btn" href="assets/cv-placeholder.pdf" download>Download CV placeholder</a>
-        </section>
-
-        <section id="contact" class="block">
-          <h1>Contact</h1>
-          <p>
-            Connect with me at
-            <a href="mailto:youremail@example.com">youremail@example.com</a>.
-            The link and details can be updated immediately when you share final info.
-          </p>
-        </section>
-      </div>
+      <section id="publications" class="block">
+        <h2>Publications</h2>
+      </section>
     </main>
-
-    <script>
-      const menuToggle = document.getElementById("menuToggle");
-      const siteNav = document.getElementById("siteNav");
-      menuToggle.addEventListener("click", () => {
-        siteNav.classList.toggle("open");
-      });
-    </script>
   </body>
 </html>
