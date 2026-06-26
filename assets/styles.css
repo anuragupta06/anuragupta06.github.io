@@ -1,0 +1,263 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --bg: #ffffff;
+  --surface: #f7f8fa;
+  --text: #1e2328;
+  --muted: #5c6470;
+  --line: #e4e7ec;
+  --accent: #1a4b8d;
+  --accent-soft: #eef3fc;
+  --shadow: 0 1px 8px rgba(16, 24, 40, 0.08);
+  --maxw: 1080px;
+  font-size: 16px;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: "Trebuchet MS", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  line-height: 1.6;
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.skip-link {
+  position: absolute;
+  left: -9999px;
+}
+
+.masthead {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  border-bottom: 1px solid var(--line);
+  background: #fff;
+}
+
+.masthead__inner-wrap {
+  max-width: var(--maxw);
+  margin: 0 auto;
+  padding: 0.6rem 1rem;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.masthead__brand {
+  color: #151b26;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+.menu-toggle {
+  display: none;
+  border: 1px solid var(--line);
+  background: #fff;
+  color: var(--text);
+  font-weight: 700;
+  border-radius: 6px;
+  padding: 0.4rem 0.75rem;
+}
+
+.site-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.site-nav a {
+  line-height: 2;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.content-shell {
+  max-width: var(--maxw);
+  margin: 1rem auto;
+  padding: 0 1rem 2rem;
+  display: grid;
+  grid-template-columns: 280px minmax(0, 1fr);
+  gap: 1.5rem;
+}
+
+.sidebar {
+  align-self: start;
+}
+
+.sticky {
+  position: sticky;
+  top: 5.5rem;
+}
+
+.profile {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 1.25rem;
+  box-shadow: var(--shadow);
+}
+
+.avatar {
+  width: 86px;
+  height: 86px;
+  border-radius: 999px;
+  display: grid;
+  place-items: center;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #fff;
+  background: linear-gradient(135deg, #2f5ea8 0%, #1a4b8d 100%);
+  margin-bottom: 0.8rem;
+}
+
+.author__name {
+  margin: 0;
+  font-size: 1.35rem;
+}
+
+.author__bio,
+.author__note {
+  margin: 0.45rem 0;
+  color: var(--muted);
+}
+
+.contact-list {
+  margin: 1rem 0 0;
+  padding-left: 1rem;
+}
+
+.contact-list li {
+  margin-bottom: 0.55rem;
+  color: #414a55;
+  word-break: break-word;
+}
+
+.page {
+  min-width: 0;
+}
+
+.block {
+  margin-bottom: 1.75rem;
+  border-bottom: 1px solid var(--line);
+  padding-bottom: 1.6rem;
+}
+
+h1 {
+  font-size: 1.4rem;
+  margin: 0.1rem 0 0.9rem;
+}
+
+h2 {
+  margin: 0 0 0.45rem;
+  font-size: 1.05rem;
+}
+
+.paper-box {
+  display: grid;
+  gap: 0.5rem;
+  padding: 1rem;
+  margin-bottom: 0.8rem;
+  border: 1px solid var(--line);
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+}
+
+.tags {
+  display: flex;
+  gap: 0.45rem;
+  flex-wrap: wrap;
+  margin-top: 0.4rem;
+}
+
+.tags span {
+  font-size: 0.85rem;
+  color: #25324a;
+  background: var(--accent-soft);
+  padding: 0.2rem 0.5rem;
+  border-radius: 999px;
+}
+
+.skill-list,
+.timeline {
+  margin: 0;
+  padding-left: 1.2rem;
+}
+
+.timeline li {
+  margin-bottom: 0.8rem;
+}
+
+.pdf-card {
+  background: #f4f7fb;
+  border: 1px dashed #bdd0ee;
+  border-radius: 8px;
+  padding: 0.7rem;
+}
+
+.pdf-card iframe {
+  border: 0;
+  width: 100%;
+  min-height: 380px;
+  border-radius: 6px;
+  background: #fff;
+}
+
+.hint {
+  margin: 0.5rem 0 0;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.download-btn {
+  display: inline-block;
+  margin-top: 0.6rem;
+  border: 1px solid var(--accent);
+  color: var(--accent);
+  padding: 0.45rem 0.8rem;
+  border-radius: 6px;
+}
+
+.download-btn:hover {
+  background: var(--accent);
+  color: #fff;
+  text-decoration: none;
+}
+
+@media (max-width: 880px) {
+  .content-shell {
+    grid-template-columns: 1fr;
+  }
+
+  .menu-toggle {
+    display: inline-block;
+  }
+
+  .site-nav {
+    width: 100%;
+    display: none;
+    flex-direction: column;
+    padding-bottom: 0.2rem;
+  }
+
+  .site-nav.open {
+    display: flex;
+  }
+}
