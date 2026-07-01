@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://anuragupta06.github.io/sitemap.xml
