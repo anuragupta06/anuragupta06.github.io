@@ -1,5 +1,5 @@
 @article{anuragupta2026humanscene,
   title={Human-Scene Reconstruction: A Review of Representations, Methods, and Embodied Applications},
-  author={anuragupta06},
+  author={Gupta, Anurag and Mao, Ziqi and Gu, Samuel},
   year={2026}
 }
