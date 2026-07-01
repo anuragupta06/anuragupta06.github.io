@@ -109,6 +109,29 @@ h2 {
   font-size: 32px;
 }
 
+.report-title {
+  max-width: 820px;
+  margin-right: auto;
+  margin-left: auto;
+  line-height: 1.2;
+}
+
+.report-authors {
+  margin-top: 18px;
+}
+
+.report-pdf {
+  width: 100%;
+  height: 760px;
+  border: 1px solid #ddd;
+}
+
+@media (max-width: 700px) {
+  .report-pdf {
+    height: 560px;
+  }
+}
+
 .one {
   width: 160px;
   height: 160px;
